@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker run -i --rm -v "$PWD":/out -w /root alpine /bin/sh <<EOF
+docker run -i --rm -v "$PWD":/out -w /root alpine:3.9 /bin/sh <<EOF
 apk add gcc make musl-dev ncurses-static
 wget https://github.com/vim/vim/archive/v8.1.1045.tar.gz
 tar xvfz v8.1.1045.tar.gz
